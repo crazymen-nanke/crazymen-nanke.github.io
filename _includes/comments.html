@@ -1,17 +1,3 @@
-<script type="text/javascript">
-var gitalk = new Gitalk({
-  clientID: 'fa8361f5fa969e6aa262',
-  clientSecret: '4f721a2dc12a6eae3f7c374b7d695c0d6d2ef405',
-  repo: 'gitalk ',
-  owner: 'crazymen-nanke ',
-  admin: ['crazymen-nanke , only these guys can initialize github issues'],
-  id: location.href,      // Ensure uniqueness and length less than 50
-  distractionFreeMode: false  // Facebook-like distraction free mode
-})
-
-gitalk.render('gitalk-container')
-</script>
-
 {% if site.duoshuo_shortname %}
 <!-- 多说评论框 start -->
 <div class="ds-thread" data-thread-key="{{ site.url }}{{ page.url }}" data-title="{{page.title}}" data-url="{{ site.url }}{{ page.url }}"></div>

@@ -35,7 +35,7 @@ disqus_shortname: #gaohaoyang
 # 评论系统
 # Gitalk 
 gitalk:
-  gitalk: true    #是否开启Gitalk评论
+  #gitalk: true    #是否开启Gitalk评论
   clientID: 'fa8361f5fa969e6aa262'    #生成的clientID 不要用我的
   clientSecret: '4f721a2dc12a6eae3f7c374b7d695c0d6d2ef405'   #生成的clientSecret 不要用我的
   repo: gitalk.github.io    #仓库(存放评论的项目)名称

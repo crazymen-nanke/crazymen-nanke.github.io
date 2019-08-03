@@ -66,22 +66,19 @@ layout: default
         {% include previousAndNext.html %}
 
         <h2 id="comments">评论</h2>
-        <div id="gitmentContainer"></div>
-       <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-        <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
-
-<script>
-var gitment = new Gitment({
-    owner: 'crazymen-nanke',
-    repo: 'crazymen-nanke.github.io',
-    oauth: {
-        client_id: 'fa8361f5fa969e6aa262',
-        client_secret: '4f721a2dc12a6eae3f7c374b7d695c0d6d2ef405',
-    },
-});
-gitment.render('gitmentContainer');
+        <script>
+var idcomments_acct = '06c06002af1e345a26a7e53986144bab';
+var idcomments_post_id;
+var idcomments_post_url;
 </script>
-        
+<span id="IDCommentsPostTitle" style="display:none"></span>
+<script type='text/javascript' src='https://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
+      <script>
+var idcomments_acct = '06c06002af1e345a26a7e53986144bab';
+var idcomments_post_id;
+var idcomments_post_url;
+</script>
+<script type="text/javascript" src="https://www.intensedebate.com/js/genericLinkWrapperV2.js"></script>  
 
 
        <!-- {% include comments.html %}-->

@@ -66,7 +66,20 @@ layout: default
         {% include previousAndNext.html %}
 
         <h2 id="comments">评论</h2>
-        
+        <div id="gitmentContainer"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+    owner: '南柯',
+    repo: 'gitalk.github.io',
+    oauth: {
+        client_id: 'fa8361f5fa969e6aa262',
+        client_secret: '4f721a2dc12a6eae3f7c374b7d695c0d6d2ef405',
+    },
+});
+gitment.render('gitmentContainer');
+</script>
         
 
 

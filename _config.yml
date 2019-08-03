@@ -34,13 +34,6 @@ description_footer: 本站记录我IT之旅的沿途风景！
 
 # 评论系统
 # Gitalk 
-gitment:
-  enable: true
-  githubID: crazymen-nanke
-  repo: blog-issue
-  ClientID: fa8361f5fa969e6aa262
-  ClientSecret: 4f721a2dc12a6eae3f7c374b7d695c0d6d2ef405
-  lazy: true
 
 
 # statistic analysis 统计代码

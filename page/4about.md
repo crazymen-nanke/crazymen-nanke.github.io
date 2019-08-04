@@ -8,10 +8,11 @@ type: page
 
 * content
 {:toc}
-
+此站点仅供学习交流使用，欢迎大家提供建议。
 ## 关于我
+我是一名大二学生，目前准备做移动互联开发。
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=5039981&auto=0&height=66"></iframe>
-我是一名大二学生，目前准备做移动互联开发。此站点仅供学习交流使用，欢迎大家提供建议。
+
 ## 联系我
 
 * GitHub：[NanKe](https://github.com/crazymen-nanke)

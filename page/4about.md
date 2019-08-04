@@ -11,19 +11,24 @@ type: page
 
 ## 关于我
 
-<iframe src="https://githubbadge.appspot.com/gaohaoyang?s=1" style="border: 0;height: 142px;width: 200px;overflow: hidden;" frameBorder="0"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=5039981&auto=1&height=66"></iframe>
 
 ## 联系我
 
-* GitHub：[Gaohaoyang](https://github.com/crazymen-nanke)
+* GitHub：[NanKe](https://github.com/crazymen-nanke)
 * email：2395353168@qq.com
-* [Weibo]()
-* [知乎]()
-* [Facebook]()
 
 ## 友情链接
 
 
-## Comments
+## 　
+        
+<script>
+var idcomments_acct = '06c06002af1e345a26a7e53986144bab';
+var idcomments_post_id;
+var idcomments_post_url;
+</script>
+<span id="IDCommentsPostTitle" style="display:none"></span>
+<script type='text/javascript' src='https://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
 
 {% include comments.html %}

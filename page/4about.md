@@ -1,7 +1,7 @@
 ---
 layout: page
-title: 
-permalink: /about/
+title: About
+permalink: //
 icon: heart
 type: page
 ---

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: 
 permalink: /about/
 icon: heart
 type: page
@@ -10,8 +10,8 @@ type: page
 {:toc}
 
 ## 关于我
-
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=5039981&auto=1&height=66"></iframe>
+我是一名大二学生，目前准备做移动互联开发。
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=5039981&auto=1&height=66"></iframe>
 
 ## 联系我
 
@@ -21,7 +21,7 @@ type: page
 
 
 
-## 　
+ 　
         
 <script>
 var idcomments_acct = '06c06002af1e345a26a7e53986144bab';

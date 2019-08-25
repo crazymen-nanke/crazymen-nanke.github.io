@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "JavaScript 语言精粹笔记1-语法、对象、函数"
-date:   2019-08-02 7:00:00
 categories: JavaScript
 tags:  对象 函数 this 闭包 面向对象 作用域
 author: NanKe

@@ -1,4 +1,4 @@
----
+﻿---
 layout: default
 ---
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
@@ -66,13 +66,24 @@ layout: default
         {% include previousAndNext.html %}
 
         <h2 id="comments">　</h2>
-<script>
-var idcomments_acct = '06c06002af1e345a26a7e53986144bab';
-var idcomments_post_id;
-var idcomments_post_url;
-</script>
-<span id="IDCommentsPostTitle" style="display:none"></span>
-<script type='text/javascript' src='https://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
+<!-- Link Gitalk 的支持文件  -->
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script> 
+<div id="gitalk-container"></div>     <script type="text/javascript">
+    var gitalk = new Gitalk({
+
+    // gitalk的主要参数
+		clientID: 'fa8361f5fa969e6aa262',
+		clientSecret: '4f721a2dc12a6eae3f7c374b7d695c0d6d2ef405',
+		repo: 'https://crazymen-nanke.github.io',
+		owner: 'crazymen-nanke',
+		admin: ['crazymen-nanke'],
+		id:window.location.pathname,
+    
+    });
+    gitalk.render('gitalk-container');
+</script> 
+<!-- Gitalk end -->
 
        <!-- {% include comments.html %}-->
 

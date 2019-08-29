@@ -34,10 +34,7 @@ description_footer: 本站记录我IT之旅的沿途风景！
 
 # 评论系统
 # Gitalk 
-<!-- Link Gitalk 的支持文件  -->
-
-  
-		clientID: 'fa8361f5fa969e6aa262',
+  		clientID: 'fa8361f5fa969e6aa262',
 		clientSecret: '4f721a2dc12a6eae3f7c374b7d695c0d6d2ef405',
 		repo: 'crazymen-nanke.io',
 		owner: 'crazymen-nanke',

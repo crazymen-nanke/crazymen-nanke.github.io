@@ -31,20 +31,6 @@ description_footer: 本站记录我IT之旅的沿途风景！
 #duoshuo_shortname: #hygblog
 #disqus_shortname: Svip_NanKe
 
-
-# 评论系统
-# Gitalk 
-  		clientID: 'fa8361f5fa969e6aa262',
-		clientSecret: '4f721a2dc12a6eae3f7c374b7d695c0d6d2ef405',
-		repo: 'crazymen-nanke.io',
-		owner: 'crazymen-nanke',
-		admin: ['crazymen-nanke'],
-		// facebook-like distraction free mode
-		distractionFreeMode: false
-	
-
-
-
 # statistic analysis 统计代码
 # 百度统计 id，将统计代码替换为自己的百度统计id，即
 # hm.src = "//hm.baidu.com/hm.js?xxxxxxxxxxxx";

@@ -1,4 +1,4 @@
-# Welcome to Jekyll!
+﻿# Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your whole blog, values
 # which you are expected to set up once and rarely need to edit after that.
@@ -34,6 +34,18 @@ description_footer: 本站记录我IT之旅的沿途风景！
 
 # 评论系统
 # Gitalk 
+<!-- Link Gitalk 的支持文件  -->
+
+  
+		clientID: 'fa8361f5fa969e6aa262',
+		clientSecret: '4f721a2dc12a6eae3f7c374b7d695c0d6d2ef405',
+		repo: 'crazymen-nanke.io',
+		owner: 'crazymen-nanke',
+		admin: ['crazymen-nanke'],
+		// facebook-like distraction free mode
+		distractionFreeMode: false
+	
+
 
 
 # statistic analysis 统计代码

@@ -1,0 +1,152 @@
+---
+layout: post
+title:  "MySQL基本操作"
+categories:MySQL
+tags: ResultSet MySQL
+author: NanKe
+---
+
+* content
+{:toc}
+
+
+
+
+## 功能模块
+
+```java
+package com.lianghengjia.testdata;
+
+//对MySQL数据库进行了简单的练习
+//并且将ResultSet转换成了JSON数据
+//实现功能：将数据库表里面的数据以JSONArray的形式进行输出
+import android.os.Bundle;
+import androidx.appcompat.app.AppCompatActivity;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.sql.*;
+
+public class MainActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+
+                System.out.println("JSONArray:" + connectMysql().toString());
+            }
+        }).start();
+    }
+
+    private JSONArray connectMysql() {
+        final String DRIVER = "com.mysql.jdbc.Driver";
+        final String URL = "jdbc:mysql://ip地址/数据库名";
+        final String USER = "账户名";
+        final String PASSWORD = "密码";
+        JSONArray array = new JSONArray();
+        try {
+            Class.forName(DRIVER);
+            Connection connection = DriverManager.getConnection(URL, USER, PASSWORD);
+            Statement statement = connection.createStatement();
+            ResultSet resultSet = statement.executeQuery("SELECT * FROM user_infmation");
+
+            while (resultSet.next()) {
+                ResultSetMetaData metaData = resultSet.getMetaData();
+                JSONObject object = new JSONObject();
+                int columnCount = metaData.getColumnCount();
+                for (int i = 1; i <= columnCount; i++) {
+                    String name = metaData.getColumnLabel(i);
+                    String value = resultSet.getString(name);
+                    object.put(name, value);
+                }
+                array.put(object);
+            }
+            connection.close();
+            statement.close();
+            resultSet.close();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        return array;
+    }
+
+}
+
+
+```
+
+
+
+## 将结果集转换为JSON对象
+
+```java
+//将结果集转换为JSON对象
+    public static JSONObject resultSetToJsonObject(ResultSet rs) throws SQLException, JSONException {
+
+        // json对象
+
+        JSONObject jsonObj = new JSONObject();
+
+        // 获取列数
+
+        ResultSetMetaData metaData = rs.getMetaData();
+
+        int columnCount = metaData.getColumnCount();
+
+        // 遍历ResultSet中的每条数据
+
+        if (rs.next()) {
+
+            // 遍历每一列
+
+            for (int i = 1; i <= columnCount; i++) {
+
+                String columnName = metaData.getColumnLabel(i);
+
+                String value = rs.getString(columnName);
+
+                JSONObject put = jsonObj.put(columnName, value);
+
+            }
+
+        }
+
+        return jsonObj;
+
+    }
+```
+
+
+
+## 将结果集转换成JSON数组
+
+```java
+ //将结果集转换成JSON数组
+    public JSONArray resultSetToJSONArray(ResultSet resultSet) throws SQLException, JSONException {
+
+        ResultSetMetaData metaData = resultSet.getMetaData();
+        int columnCount = metaData.getColumnCount();
+        JSONArray array = new JSONArray();
+
+        while (resultSet.next()) {
+            JSONObject object = new JSONObject();
+            for (int i = 1; i <= columnCount; i++) {
+                String columnName = metaData.getColumnLabel(i);
+                String value = resultSet.getString(columnName);
+                object.put(columnName, value);
+            }
+            array.put(object);
+        }
+        return array;
+    }
+```
+

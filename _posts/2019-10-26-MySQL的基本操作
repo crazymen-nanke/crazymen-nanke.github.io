@@ -4,13 +4,16 @@ title:  "MySQL基本操作"
 categories:MySQL
 tags: ResultSet MySQL
 author: NanKe
+
 ---
 
 * content
 {:toc}
 
 
-主要记录了安卓环境下对MYSQL数据库的操作。
+
+
+
 
 ## 功能模块
 

@@ -9,6 +9,10 @@ author: NanKe
 
 * content
 {:toc}
+本文主要记录了安卓程序连接数据库后对ResultSet的简单操作。
+
+
+
 ### 将数据库表里面的数据以JSONArray的形式进行输出
 
 ```java

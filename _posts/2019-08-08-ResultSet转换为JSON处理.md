@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Android Studio安装配置、环境搭建详细步骤及基本使用"
+title:  "ResultSet简单处理"
 date:   2019-08-08 12:17:00
 categories: Android
 tags:  ResultSet

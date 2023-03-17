@@ -10,7 +10,7 @@ type: page
 {:toc}
 此站点仅供学习交流使用，欢迎大家提供建议。
 ## 关于我
-一个闷骚类型的男孩。
+喜欢编码，对Android，web开发，Java开发有着兴趣，希望做一名合格的全栈程序员。
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=5039981&auto=0&height=66"></iframe>
 ## 联系我
 

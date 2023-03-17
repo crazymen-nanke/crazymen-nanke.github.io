@@ -7,7 +7,7 @@
 
 # Site settings
 title: 南柯的技术专栏
-brief-intro: Android and HTML Coder
+brief-intro: 全栈之路
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://crazymen-nanke.github.io" # the base hostname & protocol for your site
 

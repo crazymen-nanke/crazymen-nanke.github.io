@@ -14,12 +14,14 @@ author: NanKe
 
 
 # 前言
+
 `提示：记录使用的数据库版本`
 
 MySQL数据库的版本Server version: 5.1.73-community MySQL Community Server (GPL)
 
 # 一、数据库准备
 我们创建名字为test的数据库，并且分别创建名字为dept与employee的表。
+
 插入数据到两张表之后，笔者创建了数据库test用户，并且授予test用户所有操作数据库的权限。
 
 SQL代码如下：
@@ -55,14 +57,19 @@ flush privileges;
 
 # 二、Java程序连接
 ## 1.引入库
+
 连接MySQL数据库必须要使用MySQL数据库公司提供的jar包。点击这个连接可以进行下载：[下载MySQL的jar包](https://repo1.maven.org/maven2/mysql/mysql-connector-java/5.1.30/mysql-connector-java-5.1.30.jar)
 
 1：下载好jar包之后，在项目名称下创建lib文件夹，将下载好的jar包放入lib文件夹。项目树如下所示：
-![项目树](https://img-blog.csdnimg.cn/c5c0853ec38043d19308871490317f9c.png)
+
+![项目树](https://raw.githubusercontent.com/crazymen-nanke/image/master/note/202303181213067.png)
 
 2：选中mysql-connector-java-5.1.30-bin.jar包，右击鼠标效果图如下：
-![点击Add as Library](https://img-blog.csdnimg.cn/60f2e23c62c1417aa170dbcefd45fc3d.png)
-3：点击Add as Library，完成jar包的导入.
+
+![点击Add as Library](https://raw.githubusercontent.com/crazymen-nanke/image/master/note/202303181213016.png)
+
+3：点击Add as Library，完成jar包的导入
+
 ## 2.编写Java代码
 
 代码如下：
@@ -115,9 +122,9 @@ public class Demo1 {
 
 ```
 运行结果如下：
-![运行结果](https://img-blog.csdnimg.cn/1439e8aafcb64e18a6bde7725b709638.png)
 
----
+![运行结果](https://raw.githubusercontent.com/crazymen-nanke/image/master/note/202303181213074.png)
 
-# 总结
+## 总结
+
 当我们使用JDBC连接数据库的时候尽量使用 PreparedStatement去操作数据库，因为这个对象更加的安全，可以防止SQL注入； PreparedStatement使用setObject（）方法去为占位符设置具体的值，使代码更加的清楚直观，可读性性更高。
